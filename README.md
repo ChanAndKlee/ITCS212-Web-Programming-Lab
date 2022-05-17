@@ -2,7 +2,7 @@
 
 #### This is a compilation of all lab that I have done within the web programming class.
 
-Status: 100% completed 🥇 (17/5/2022)
+Status: ```100% completed``` 🥇 (17/5/2022)
 
 Currently, it consisted of six main topics:
 1. HTML
@@ -14,7 +14,7 @@ Currently, it consisted of six main topics:
     - Basic Concepts of JS
     - Object-Oriented Programming (OOP)
     - Document Object Model (DOM)
-5. Node.js *(Install Node.js required)*
+5. Node.js (Install ```Node.js``` https://nodejs.org/en/download/ required)
     - Basic Concepts of Node.js
     - Node.js express
     - Routing
@@ -33,10 +33,11 @@ Currently, it consisted of six main topics:
 - Required Output (some)
 - Source Code
 
-Note: There are several ways to solve a single problem,
-you may get a different solution which is totally fine as long as it suits the criteria =)
+Note:
+- You need to download ```nodemodules``` by yourself to run some folder, follow the description paper
+- There are several ways to solve a single problem, you may get a different solution which is totally fine as long as it suits the criteria =)
 
 Good luck!  
 Ps. Problem opening the file, pls inform me, thanks
-
+    
 <img width=500 src="https://sportshub.cbsistatic.com/i/2022/05/16/3eee5cbd-0e19-48fd-a094-500cfe42c931/spy-x-family-anya-heh-anime.jpg">
