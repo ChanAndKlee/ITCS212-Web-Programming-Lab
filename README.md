@@ -14,7 +14,7 @@ Currently, it consisted of six main topics:
     - Basic Concepts of JS
     - Object-Oriented Programming (OOP)
     - Document Object Model (DOM)
-5. Node.js (Install ```Node.js``` https://nodejs.org/en/download/ required)
+5. Node.js (Install <a href="https://nodejs.org/en/download/">Node.js</a> required)
     - Basic Concepts of Node.js
     - Node.js express
     - Routing
@@ -34,7 +34,7 @@ Currently, it consisted of six main topics:
 - Source Code
 
 Note:
-- You need to download ```nodemodules``` by yourself to run some folder, follow the description paper
+- You need to download ```node_modules``` by yourself to run some folder, follow the description paper
 - There are several ways to solve a single problem, you may get a different solution which is totally fine as long as it suits the criteria =)
 
 Good luck!  
