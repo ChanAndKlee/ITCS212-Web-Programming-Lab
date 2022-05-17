@@ -1,0 +1,16 @@
+{
+    "name": "l06-sec2-6388040-q2",
+    "version": "1.0.0",
+    "main": "L06-Sec2-6388040-q2.js",
+    "scripts": {
+        "start": "nodemon L06-Sec2-6388040-q2.js"
+    },
+    "author": "Ariya Phengphon, Section 2, 6388040",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "nodemon": "^2.0.15"
+    }
+}

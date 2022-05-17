@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Search Section -->
+    <label for="search-field">Search:</label>
+    <input id="search-field" type="text">
+    <button id="search-btn">Search</button>
+
+    <!-- Display Output -->
+    <h2>Food List</h2>
+    <ul id="foodList-results">
+
+    </ul>
+
+    <!-- Connect to APIs -->
+    <script>
+        const apiKey = '67e551e680fa4a69bd085143e463a457';
+        const keyword = document.querySelector('#search-field')
+
+
+        const btn = document.querySelector('#search-btn');
+        btn.addEventListener('click', getData);
+
+
+        function getData() {
+            fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${keyword.value}`)
+                .then(response => response.json())
+                .then(data => {
+                    let myList = document.querySelector('#foodList-results');
+
+                    const list = data['results'];
+                    var arr = [];
+                    var arrimg = [];
+
+
+                    for (var i = 0; i < list.length; i++) {
+                        arr.push(list[i].title);
+                        arrimg.push(list[i].image);
+                        // Displaying
+                        let myEl = document.createElement('li');
+                        myEl.innerText = arr[i]; //+ "<br>" + `<img src=${arrimg[i]}`;
+                        myList.appendChild(myEl);
+                    }
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+            // `
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 0 1 1 2 3 5 8 -->
+    <script>
+        var n = 40,
+            f1 = 0,
+            f2 = 1;
+        while (f1 < n) {
+            console.log(f1);
+            next = f1 + f2;
+            f2 = f1;
+            f1 = next;
+        }
+    </script>
+</head>
+<main>
+</main>
+
+</html>

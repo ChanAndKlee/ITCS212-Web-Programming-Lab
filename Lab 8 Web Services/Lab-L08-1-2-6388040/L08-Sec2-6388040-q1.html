@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+
+    <label for="search">Search:</label>
+    <input id="search">
+    <button id="search-btn">Search</button>
+    <h2>Food List</h2>
+    <div id="output">
+    </div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        const btn = document.getElementById('search-btn');
+        btn.addEventListener('click', getResult);
+
+        var search = document.getElementById('search');
+
+
+        function getResult() {
+            // console.log(search.value);
+            fetch('https://api.spoonacular.com/recipes/complexSearch?query=' + search.value + '&apiKey=67e551e680fa4a69bd085143e463a457')
+                .then(response => response.json())
+                .then(result => {
+                    // extract only array results
+                    const data = result['results'];
+                    console.log(data);
+                    // replace with blank before printing new
+                    output.innerHTML = "";
+                    // storing
+                    const arr = [];
+                    const arrimg = [];
+                    for (let i = 0; i < data.length; i++) {
+                        arr.push(data[i].title);
+                        arrimg.push(data[i].image);
+                        output.innerHTML += "<li>" + arr[i] + "<br>" + `<img src=${arrimg[i]}>` + "</li>";
+                    }
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "q2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "L07-Sec2-6388040-q2",
+    "scripts": {
+        "start": "nodemon L07-Sec2-6388040-q2.js"
+    },
+    "author": "Ariya Phengphon, Section 2, 6388040",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "express": "^4.17.2",
+        "mysql2": "^2.3.3",
+        "nodemon": "^2.0.15"
+    }
+}

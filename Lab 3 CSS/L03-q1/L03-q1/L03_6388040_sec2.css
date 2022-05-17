@@ -1,0 +1,113 @@
+            /* #1 All
+font used in the webpage must be sans-serif
+-----------------------------------------------------*/
+            
+            * {
+                font-family: sans-serif;
+            }
+            /* #2 <header> and <footer>
+Change color #F8F9F9 with center alignment and bg color is #2E4053
+-----------------------------------------------------*/
+            
+            header,
+            footer {
+                color: #F8F9F9;
+                text-align: center;
+                background: #2E4053;
+            }
+            /* #3 <h1> inside <header>
+No bottom margin and have padding 20px
+-----------------------------------------------------*/
+            
+            header h1 {
+                margin-bottom: 0;
+                padding: 20px;
+            }
+            /* #4 <p> inside <footer>
+Padding to 5px
+-----------------------------------------------------*/
+            
+            footer p {
+                padding: 5px;
+            }
+            /* #5 navbar (class)
+background to #5D6D7E, no margin, no list style type,
+elements aligned (row-based) to the left => flex
+-----------------------------------------------------*/
+            
+            .navbar {
+                background: #5D6D7E;
+                margin: 0;
+                list-style: none;
+                display: flex;
+            }
+            /* #6 <a> inside navbar (class)
+color text to #FDFEFE, padding(top & bottom) to 14px (left and right) to 20px,
+no text decoration
+-----------------------------------------------------*/
+            
+            .navbar a {
+                color: #FDFEFE;
+                /* Set based on the clockwise ('Top, right', 'bottom, left') */
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            /* #7 <a> inside navbar (class) >>>HOVER<<<
+bg color to #85929E
+-----------------------------------------------------*/
+            
+            .navbar a:hover {
+                background: #85929E;
+            }
+            /* #8 every <article>
+width to 80%, auto margin, padding left & right to 20px
+-----------------------------------------------------*/
+            
+            article {
+                width: 80%;
+                margin: auto;
+                padding: 0px 20px;
+            }
+            /* #9 images (class)
+display img in row-based (flex), alight the content to center
+-----------------------------------------------------*/
+            
+            .images {
+                display: flex;
+                justify-content: center;
+            }
+            /* #10 every <img>
+img height to 250px, border is rounded with a radius of 10px,
+during mouse overing the image turns trasparent (opacity 0.8)
+-----------------------------------------------------*/
+            
+            img {
+                height: 250px;
+                border-radius: 10px;
+            }
+            
+            img:hover {
+                opacity: 0.8;
+            }
+            /* #11 every <figurecaption>
+the text is italic
+-----------------------------------------------------*/
+            
+            figcaption {
+                font-style: italic;
+            }
+            /* #12 <a> with top class
+aligned at center and bg color is #D7DBDD,
+during hovering the bg changes to #48C9B0
+-----------------------------------------------------*/
+            
+            a.top {
+                /* <a> tag can't be aligned directly cause inline element */
+                display: block;
+                text-align: center;
+                background: #D7DBDD;
+            }
+            
+            a.top:hover {
+                background: #48C9B0;
+            }

@@ -1,0 +1,15 @@
+{
+    "name": "lab07-sec2-6388040",
+    "version": "1.0.0",
+    "main": "L07-Sec2-6388040-q1.js",
+    "scripts": {
+        "start": "nodemon L07-Sec2-6388040-q1.js"
+    },
+    "author": "Ariya Phengphon, Section 2, 6388040",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^4.17.2",
+        "nodemon": "^2.0.15"
+    }
+}
